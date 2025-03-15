@@ -41,7 +41,8 @@ int main()
             deleting_node_using_element(a, start);
         }
         i++;
-        if(start==NULL){
+        if (start == NULL)
+        {
             printf("------>linked List is completely deleted<-----");
             break;
         }
@@ -49,8 +50,8 @@ int main()
         printLinkedList(start);
         printf("-------->>>><<<<<<----------");
         printf("\n\nfurther deletion Y/N = ");
-        y=getc(stdin);
-        printf("%c",y);
+        y = getc(stdin);
+        printf("%c", y);
     } while (y == 121 || y == 89);
     return 0;
 }
